@@ -567,7 +567,7 @@
             }
         }
 
-       /**  @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .hero-mobile-glass {
                 background: rgba(255, 255, 255, 0.12);
                 backdrop-filter: blur(24px);
@@ -577,12 +577,17 @@
                 padding: 1.5rem;
                 margin-top: 1.5rem;
             }
+            .hero-mobile-glass .flex.items-center.gap-3.mb-4 {
+                justify-content: flex-start;
+                text-align: left;
+            }
             .hero-mobile-glass .feature-row {
                 display: flex;
                 align-items: center;
                 gap: 0.75rem;
                 padding: 0.5rem 0;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                text-align: left;
             }
             .hero-mobile-glass .feature-row:last-child {
                 border-bottom: none;
@@ -591,6 +596,8 @@
                 color: #5eead4;
                 font-size: 0.875rem;
                 width: 20px;
+                flex-shrink: 0;
+                text-align: center;
             }
             .hero-mobile-glass span {
                 color: rgba(255, 255, 255, 0.9);
@@ -605,7 +612,7 @@
                 color: rgba(255, 255, 255, 0.8);
                 letter-spacing: 0.05em;
             }
-        } **/
+        }
 
         img {
             background-color: #f3f4f6;
@@ -819,7 +826,8 @@
         <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-0">
             <div class="hero-content-wrapper grid lg:grid-cols-2 gap-6 lg:gap-10 xl:gap-12 items-center">
                 <!-- Left Text Content -->
-                <div class="hero-text-content text-center lg:text-left">
+                <div class="hero-text-content text-center lg:text-left" style="margin-top: 45px;">
+			</br>
                     <div class="hero-badge inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass text-white text-xs font-medium mb-3 sm:mb-4">
                         <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
                         Authorized Dealer for Innovation Meditech Pvt. Ltd.
